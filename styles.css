@@ -1,0 +1,133 @@
+:root {
+    --primary-color: rgba(13,110,139,0.45);
+    --overlay-color: rgba(24,39,51,0.85); 
+    --continue-color: rgba(43,16,85,0.80);
+    --gradient-color: rgba(117,151,222,0.80);
+    --menu-speed: 0.75s;
+}
+
+*{ 
+    box-sizing: border-bos;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Noto Sans',sans-serif;
+    line-heigh: 1.4;
+}
+
+.container {
+    max-width: 960px;
+    margin : auto;
+    overflow: hiddem;
+    padding: 0 3rem;
+}
+
+.showcase{
+    background: linear-gradient(var(--continue-color),var(--gradient-color));
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.showcase:before{
+    content:'';
+    background: url('background.jpeg')no-repeat center center/cover;
+    position : absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.showcase .showcase-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures that the borders are not doubled */
+}
+
+/* Styling for table headers */
+th, td {
+    border: 1px solid #ddd; /* Border for table cells */
+    padding: 8px; /* Padding for table cells */
+    text-align: left; /* Text alignment */
+}
+
+.showcase h1{
+    font-size 4rem;
+}
+
+.showcase p{
+    font-size: 1.3rem;
+}
+
+
+.btn{
+    display: inline-block;
+    border: none ;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: opacity 1s
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+
+.showcase .showcase-inners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height: 100%;
+}
+
+.showcases{
+    background: linear-gradient(var(--gradient-color),var(--continue-color));
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.showcases:before{
+    content:'';
+    position : absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.showcases .showcases-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    text-align: left;
+    height: 100%;
+}
+
+.showcases2{
+    background: var(--continue-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
